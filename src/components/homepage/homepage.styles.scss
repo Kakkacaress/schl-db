@@ -1,0 +1,47 @@
+.homepage {
+    height: 100vh;
+    margin-top: -20px;
+    padding-top: 0px;
+    // background: url(../assets/bgnew.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    .container {
+        display: flex;
+        justify-content: center;
+        height: 90vh;
+        border: 1px solid black;
+
+
+
+        .picture {
+            height: inherit;
+            flex-basis: 50%;
+            // background-image: url(../../assets/logo.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+            img {
+                height: 90%;
+                width: 75%;
+            }
+        }
+
+        .introduction_text {
+            height: inherit;
+            flex-basis: 50%;
+            overflow: scroll;
+
+            .text {
+                padding-left: 30px;
+                font-size: 20px;
+                text-align: justify;
+            }
+        }
+
+    }
+
+}
