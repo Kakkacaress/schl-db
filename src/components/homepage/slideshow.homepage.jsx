@@ -34,6 +34,7 @@ const Slideshow = () => {
                     <div className="image-container">
                         <img src={fadeImages[1]} />
                     </div>
+
                     {/* <h2>Second Slide</h2> */}
                 </div>
                 {/* <div className="each-fade">
