@@ -3,17 +3,17 @@ import { Fade } from 'react-slideshow-image';
 
 import './slideshow.styles.scss'
 
-import image1 from '../../assets/img1.jpg';
-import image2 from '../../assets/img2.jpg';
-import image3 from '../../assets/img3.jpg';
-import image4 from '../../assets/img4.jpg';
-import image5 from '../../assets/img5.jpeg';
-import image6 from '../../assets/img6.jpg';
-import image7 from '../../assets/img7.jpg';
-import image8 from '../../assets/img8.jpeg';
-import image9 from '../../assets/img9.jpeg';
-import image10 from '../../assets/img10.jpg';
-import image11 from "../../assets/logo.png";
+import image1 from '../../../assets/img1.jpg';
+import image2 from '../../../assets/img2.jpg';
+import image3 from '../../../assets/img3.jpg';
+import image4 from '../../../assets/img4.jpg';
+import image5 from '../../../assets/img5.jpeg';
+import image6 from '../../../assets/img6.jpg';
+import image7 from '../../../assets/img7.jpg';
+import image8 from '../../../assets/img8.jpeg';
+import image9 from '../../../assets/img9.jpeg';
+import image10 from '../../../assets/img10.jpg';
+import image11 from "../../../assets/logo.png";
 
 
 const fadeImages = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11,];

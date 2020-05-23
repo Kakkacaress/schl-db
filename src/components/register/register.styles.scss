@@ -6,9 +6,42 @@
     margin-bottom: 50px;
 
 
+
+
     .form {
-        width: 40vw;
+        margin-top: 30px;
+        width: 35vw;
         font-size: 20px;
+        box-shadow: 0 20px 20px rgba(53, 40, 170, 0.3);
+        padding: 0px 5px 5px 0px;
+
+        .group_div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 35vw;
+            height: 60px;
+
+            .each_div {
+                width: 49%;
+            }
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: inherit;
+            background-color: #05536d;
+            border-top-right-radius: 5px;
+            border-top-left-radius: 5px;
+            color: white;
+            font-size: 30px;
+            margin-bottom: 40px;
+
+        }
+
     }
 }
 
@@ -17,6 +50,8 @@
     justify-content: space-between;
     align-items: center;
     height: max-content;
+    padding: 5px;
+
 
     span {
         display: flex;

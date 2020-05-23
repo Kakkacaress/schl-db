@@ -4,6 +4,7 @@ import { Switch, Route } from "react-router-dom";
 import "./App.scss";
 
 import Header from "./header/header.component";
+import Footer from "./footer/footer.component";
 import Register from "./register/register.component";
 import SignIn from "./sign-in/sign-in.component";
 import Contact from "./contact/contact.component";
@@ -62,6 +63,7 @@ class App extends React.Component {
           <Route path="/contact" component={Contact} />
           <Route path="/dashboard" component={Dashboard} />
         </Switch>
+        <Footer />
       </div>
     );
   }

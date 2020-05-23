@@ -69,25 +69,31 @@ class Register extends React.Component {
         return (
             <div className='sign_up'>
                 <form onSubmit={this.handleSubmit} className='form' >
-
-                    <FormInput
-                        name='firstName'
-                        type='firstName'
-                        label='First Name'
-                        maxLength='15'
-                        value={firstName}
-                        handleChange={this.handleChange}
-                        required
-                    />
-                    <FormInput
-                        name='lastName'
-                        type='lastName'
-                        label='Last Name'
-                        maxLength='15'
-                        value={lastName}
-                        handleChange={this.handleChange}
-                        required
-                    />
+                    <div className='header'>Register</div>
+                    <div className="group_div">
+                        <div className="each_div">
+                            <FormInput
+                                name='firstName'
+                                type='firstName'
+                                label='First Name'
+                                maxLength='15'
+                                value={firstName}
+                                handleChange={this.handleChange}
+                                required
+                            />
+                        </div>
+                        <div className="each_div">
+                            <FormInput
+                                name='lastName'
+                                type='lastName'
+                                label='Last Name'
+                                maxLength='15'
+                                value={lastName}
+                                handleChange={this.handleChange}
+                                required
+                            />
+                        </div>
+                    </div>
                     <FormInput
                         name='dob'
                         type='text'
@@ -96,42 +102,55 @@ class Register extends React.Component {
                         handleChange={this.handleChange}
                         required
                     />
-                    <FormInput
-                        name='email'
-                        type='email'
-                        label='Email'
-                        maxLength='30'
-                        value={email}
-                        handleChange={this.handleChange}
-                        required
-                    />
-                    <FormInput
-                        name='password'
-                        type='password'
-                        label='Password'
-                        value={password}
-                        minLength='8'
-                        maxLength='15'
-                        handleChange={this.handleChange}
-                    />
-                    <FormInput
-                        name='basic'
-                        type='text'
-                        label='Basic'
-                        value={basic}
-                        maxLength='15'
-                        handleChange={this.handleChange}
-                        required
-                    />
-                    <FormInput
-                        name='parentsName'
-                        type='text'
-                        label='Parents Name'
-                        value={parentsName}
-                        maxLength='30'
-                        handleChange={this.handleChange}
-                        required
-                    />
+                    <div className="group_div">
+                        <div className="each_div">
+                            <FormInput
+                                name='email'
+                                type='email'
+                                label='Email'
+                                maxLength='30'
+                                value={email}
+                                handleChange={this.handleChange}
+                                required
+                            />
+                        </div>
+                        <div className="each_div">
+                            <FormInput
+                                name='password'
+                                type='password'
+                                label='Password'
+                                value={password}
+                                minLength='8'
+                                maxLength='15'
+                                handleChange={this.handleChange}
+                            />
+                        </div>
+                    </div>
+                    <div className="group_div">
+                        <div className="each_div">
+                            <FormInput
+                                name='basic'
+                                type='text'
+                                label='Basic'
+                                value={basic}
+                                maxLength='15'
+                                handleChange={this.handleChange}
+                                required
+                            />
+                        </div>
+                        <div className="each_div">
+                            <FormInput
+                                name='parentsName'
+                                type='text'
+                                label='Parents Name'
+                                value={parentsName}
+                                maxLength='30'
+                                handleChange={this.handleChange}
+                                required
+                            />
+                        </div>
+                    </div>
+
                     <FormInput
                         name='formerSchool'
                         type='text'
