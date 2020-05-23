@@ -31,17 +31,18 @@
         // border: 1px solid black;
 
         .picture {
+            // display: block;
             height: inherit;
             flex-basis: 50%;
-            width: 1000px;
+            width: 700px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
             text-align: center;
 
             img {
-                height: 85vh;
-                width: 900px;
+                height: 500px;
+                width: 700px;
                 box-shadow: 0 20px 20px rgba(53, 40, 170, 0.7);
 
             }

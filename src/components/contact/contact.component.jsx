@@ -1,15 +1,47 @@
 import React, { Component } from 'react'
+import { contacts } from './contacts'
 
 import './contact.styles.scss'
 
-let text = "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam itaque rerum delectus dolorem quae necessitatibus ipsam dicta hic! Minus beatae saepe quam reprehenderit! Rem asperiores recusandae, deserunt exercitationem aut unde"
 
 export default class Contact extends Component {
+    constructor() {
+        super();
+
+        this.state = {
+            contacts: contacts
+        }
+    }
+
+
+
     render() {
+        let contactImages = this.state.contacts.map(({ id, img, name, email, phone }) => {
+            return (
+                <div className="container">
+                    <div className="picture">
+                        <img src={img} alt="" className="image" key={id} />
+                    </div>
+                    <div className="info">
+                        <span className='details'>Name: {name} </span><br />
+                        <span className='details'>Phone: {phone}</span><br />
+                        <span className='details'>Email: {email} </span>
+                    </div>
+                </div>
+            )
+        })
         return (
             <div className='main'>
                 <div className="contact">
-                    <div className="container">
+
+                    {contactImages}
+
+                    {/* <div className="container">
+                        <div className="picture"><img src="" alt="" className="image" /></div>
+                        <div className="info">{text}</div>
+                    </div> */}
+
+                    {/* <div className="container">
                         <div className="picture"><img src="" alt="" className="image" /></div>
                         <div className="info">{text}</div>
                     </div>
@@ -27,12 +59,7 @@ export default class Contact extends Component {
                     <div className="container">
                         <div className="picture"><img src="" alt="" className="image" /></div>
                         <div className="info">{text}</div>
-                    </div>
-
-                    <div className="container">
-                        <div className="picture"><img src="" alt="" className="image" /></div>
-                        <div className="info">{text}</div>
-                    </div>
+                    </div> */}
                 </div>
                 <aside className="aside"></aside>
 
