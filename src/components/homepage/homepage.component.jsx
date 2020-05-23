@@ -94,6 +94,9 @@ const HomePage = () => {
                     <SlideShow />
                 </section>
             </div>
+            {/* <section className="picture1">
+                <SlideShow />
+            </section> */}
         </div>
     );
 }
