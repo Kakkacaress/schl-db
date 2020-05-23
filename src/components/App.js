@@ -10,6 +10,7 @@ import SignIn from "./sign-in/sign-in.component";
 import Contact from "./contact/contact.component";
 import Dashboard from "./dashboard/dashboard.component";
 import HomePage from "./homepage/homepage.component";
+import SocialNetworks from "./social networks/social-networks.component";
 
 import { auth, createUserProfileDocument } from "../firebase/firebase.utils";
 
@@ -64,6 +65,10 @@ class App extends React.Component {
           <Route path="/dashboard" component={Dashboard} />
         </Switch>
         <Footer />
+        <div className="social_networks">
+          {" "}
+          <SocialNetworks />
+        </div>
       </div>
     );
   }
