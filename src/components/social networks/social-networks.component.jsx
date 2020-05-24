@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
 
 import './social-networks.styles.scss'
 
@@ -10,7 +9,7 @@ import instagram from './assets/instagram.png'
 import twitter from './assets/twitter.png'
 
 export default function SocialNetworks() {
-    const [state, setState] = useState([
+    const [state,] = useState([
         {
             icon: fb,
             link: 'http://www.facebook.com'
