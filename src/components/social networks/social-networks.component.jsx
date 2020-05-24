@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 import './social-networks.styles.scss'
 
@@ -10,17 +11,38 @@ import twitter from './assets/twitter.png'
 
 export default function SocialNetworks() {
     const [state, setState] = useState([
-        fb, Gplus, linkedin, instagram, twitter
+        {
+            icon: fb,
+            link: 'http://www.facebook.com'
+        },
+        {
+            icon: Gplus,
+            link: 'http://www.plus.google.com'
+        },
+        {
+            icon: linkedin,
+            link: 'http://www.linkedin.com'
+        },
+        {
+            icon: instagram,
+            link: 'http://www.instagram.com'
+        },
+        {
+            icon: twitter,
+            link: 'http://www.twitter.com'
+        }
     ])
 
     const func = () => Math.random()
 
     return (
         <div className='main'>
-            {state.map(icon => {
+            {state.map(({ icon, link }) => {
                 return (
                     <div className='image_holder' key={func()} >
-                        <img src={icon} alt="icons" className='icons' />
+                        <a href={link} >
+                            <img src={icon} alt="icons" className='icons' />
+                        </a>
                     </div>
                 )
             })}
